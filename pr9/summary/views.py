@@ -5,4 +5,4 @@ import summary.sum
 
 
 def index(request, s):
-    return HttpResponse(f'<h1>Сумма чисел равна {summary.sum.summary(s)}</h1>')
+    return HttpResponse(f'<h1>Произведена замена текста: {summary.sum.summary(s)}</h1>')
