@@ -16,10 +16,12 @@ Including another URLconf
 from django.urls import path, include
 from pr9 import views
 from summary import views
+from api import urls
 from django.contrib import admin
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.index),
+    path('api/', include('api.urls')),
     path('summary/', include('summary.urls')),
 ]
